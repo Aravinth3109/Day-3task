@@ -21,5 +21,134 @@ let sortedJson2 = JSON.stringify(sortedObj2);
 
 console.log(sortedJson1 === sortedJson2);
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Get the flags from the given URL.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index].flags);
+                }
+            };
+
+            xhr.send();
+        </script>
+    </body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Get the name from the given URL.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index].name);
+                }
+            };
+
+            xhr.send();
+        </script>
+    </body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Get the regions from the given URL.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index].region);
+                }
+            };
+
+            xhr.send();
+        </script>
+    </body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Get the sub-regions from the given URL.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index].subregion);
+                }
+            };
+
+            xhr.send();
+        </script>
+    </body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Get the population from the given URL.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+
+    <body>
+        <script>
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://restcountries.com/v3.1/all', true);
+
+            xhr.onload = function () {
+                let response = JSON.parse(xhr.responseText);
+                for(let index=0; index<response.length; index++){
+                    console.log(response[index].population);
+                }
+            };
+
+            xhr.send();
+        </script>
+    </body>
+</html>
